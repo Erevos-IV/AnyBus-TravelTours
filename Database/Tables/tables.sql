@@ -1,5 +1,5 @@
 CREATE TABLE Drivers(
-	DriverID INT NOT NULL AUTO_INCREMENT,
+    DriverID INT NOT NULL AUTO_INCREMENT,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     -- I CHOOSE VARCHAR BECAUSE IT CAN BE LIKE (+30) (+20) etc...
@@ -12,8 +12,8 @@ CREATE TABLE Drivers(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Passengers(
-	-- PassengerID may be varchar because it can be given by AnyBus like AN1038GR
-	PassengerID VARCHAR(8) NOT NULL ,
+    -- PassengerID may be varchar because it can be given by AnyBus like AN1038GR
+    PassengerID VARCHAR(8) NOT NULL ,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     -- I CHOOSE VARCHAR BECAUSE IT CAN BE LIKE (+30) (+20) etc...
@@ -25,8 +25,8 @@ CREATE TABLE Passengers(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Towns(
-	TownID INT NOT NULL AUTO_INCREMENT,
-	Name VARCHAR(35) NOT NULL,
+    TownID INT NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(35) NOT NULL,
     -- Location may be Athens, Thesalloniki etc...
     Location VARCHAR(50) NOT NULL,
     
@@ -35,7 +35,7 @@ CREATE TABLE Towns(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Brands(
-	BrandID INT NOT NULL AUTO_INCREMENT,
+    BrandID INT NOT NULL AUTO_INCREMENT,
     Title VARCHAR(45) NOT NULL,
     
     PRIMARY KEY(BrandID)
@@ -43,8 +43,8 @@ CREATE TABLE Brands(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Busses(
-	-- A600, B420 etc...
-	BusID VARCHAR(5) NOT NULL ,
+    -- A600, B420 etc...
+    BusID VARCHAR(5) NOT NULL ,
     NumberOfSeats INT NOT NULL,
     BrandID INT NOT NULL,
     YearOfConstruction INT NOT NULL,
@@ -55,7 +55,7 @@ CREATE TABLE Busses(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Routes(
-	RouteID INT NOT NULL AUTO_INCREMENT,
+    RouteID INT NOT NULL AUTO_INCREMENT,
     Name VARCHAR(20) NOT NULL,
     Towns TEXT NOT NULL,
     
@@ -64,7 +64,7 @@ CREATE TABLE Routes(
 
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE Trips(
-	TripID INT NOT NULL AUTO_INCREMENT,
+    TripID INT NOT NULL AUTO_INCREMENT,
     DriverID INT NOT NULL,
     BusID VARCHAR(5) NOT NULL,
     DateOfTrip DATETIME NOT NULL,
