@@ -2,7 +2,7 @@
 
 INSERT INTO Drivers 
 VALUES("1", "Vasileios", "Goysetis", "+306983227659", "2027-05-18", "VAGU306959"),
-	  ("2", "Georgiana", "Katakoyzhnoy", "+306971482077", "2024-10-30", "GEKA306977"),
+      ("2", "Georgiana", "Katakoyzhnoy", "+306971482077", "2024-10-30", "GEKA306977"),
       ("3", "Xara", "Petridou", "+306918572919", "2026-01-23", "XAPE306919"),
       ("4", "Kwnstantinos", "Meraklhs", "+306992745174", "2033-05-01", "KWME306974"),
       ("5", "Georgios", "Kotopoulas", "+306983271948", "2029-12-10", ""),
@@ -45,7 +45,7 @@ VALUES (1,"Tara","Franco","04 60 53 99 01","1968-11-14 14:58:57"),
 
 INSERT INTO Towns
 VALUES ("1", "Korydallos", "Peiraias"),
-	   ("2", "Nikaia", "Peiraias"),
+       ("2", "Nikaia", "Peiraias"),
        ("3", "Neapolh", "Peiraias"),
        ("4", "Mosxato", "Peiraias"),
        ("5", "Perama", "Peiraias"),
@@ -58,23 +58,23 @@ VALUES ("1", "Korydallos", "Peiraias"),
        ("12", "Kaminia", "Peiraias");
      
 INSERT INTO Brands 
-VALUES ("1", "Volksvagen"),
-	   ("2", "Renault"),
+VALUES ("1", "Volksvagen"), 
+       ("2", "Renault"),
        ("3", "Ferrari"),
        ("4", "Audi"),
        ("5", "Ponny");
        
 INSERT INTO Busses
 VALUES ("AA150", 30, 2, 1999),
-	   ("AA480", 15, 5, 2002),
+       ("AA480", 15, 5, 2002),
        ("AB200", 40, 3, 2001),
        ("AA310", 35, 4, 1998),
        ("AB250", 40, 3, 2004),
        ("AC010", 25, 1, 2017);
 
 INSERT INTO Routes
-VALUES ("1", "BigTrip", "Korydallos -> Nikaia -> Neapolh -> Mosxato -> Perama -> Aspropyrgos -> Megara"),
-	   ("2", "DailyTrip", "Korydallos -> Nikaia -> Neapolh"),
+VALUES ("1", "BigTrip", "Korydallos -> Nikaia -> Neapolh -> Mosxato -> Perama -> Aspropyrgos -> Megara"), 
+       ("2", "DailyTrip", "Korydallos -> Nikaia -> Neapolh"),
        ("3", "CapitalTrip", "Xaidari -> Agia Varvara -> Korydallos -> Nikaia -> Neapolh -> Kaminia -> Pasalimani"),
        ("4", "FamilyTour", "Drapetswna -> Neapolh -> Nikaia -> Korydallos -> Agia Varvara");
 
