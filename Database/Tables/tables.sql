@@ -77,7 +77,7 @@ CREATE TABLE Trips(
 ) ENGINE = InnoDB;
 -- ---------------------------------------------------------------------------------------------
 CREATE TABLE TripHistory(
-	THID INT NOT NULL AUTO_INCREMENT,
+    THID INT NOT NULL AUTO_INCREMENT,
     TripID INT NOT NULL,
     RouteID INT NOT NULL,
     -- Every time a new record is added to that table
@@ -90,4 +90,4 @@ CREATE TABLE TripHistory(
     FOREIGN KEY(RouteID) REFERENCES Routes(RouteID),
     FOREIGN KEY(PassengerID) REFERENCES Passengers(PassengerID)
 ) ENGINE = InnoDB;
--- ----------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------
