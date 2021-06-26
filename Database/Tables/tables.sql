@@ -76,3 +76,18 @@ CREATE TABLE Trips(
     FOREIGN KEY(BusID) REFERENCES Busses(BusID)
 ) ENGINE = InnoDB;
 -- ---------------------------------------------------------------------------------------------
+CREATE TABLE TripHistory(
+	THID INT NOT NULL AUTO_INCREMENT,
+    TripID INT NOT NULL,
+    RouteID INT NOT NULL,
+    -- Every time a new record is added to that table
+    -- A different passenger will be added.
+    -- MongoDB may be better for that particular Part.
+    PassengerID VARCHAR(8) NOT NULL,
+    
+    PRIMARY KEY(THID),
+    FOREIGN KEY(TripID) REFERENCES Trips(TripID),
+    FOREIGN KEY(RouteID) REFERENCES Routes(RouteID),
+    FOREIGN KEY(PassengerID) REFERENCES Passengers(PassengerID)
+) ENGINE = InnoDB;
+-- ----------------------------------------------------------------------------------------------
